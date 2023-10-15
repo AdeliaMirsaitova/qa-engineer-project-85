@@ -1,0 +1,66 @@
+---
+- summary: |
+    Проверка регистрации нового пользователя
+  requirement: |
+    Пользователи могут регистрироваться
+  prerequisites: |
+    no-data
+  test-data: |
+    no-data
+  steps:
+    - Нажать на кнопку Sign up
+    - Ввести данные в поле Nickname
+    - Ввести данные в поле Email
+    - Ввести данные в поле Password
+    - Ввести данные в поле Password Confirmation
+    - Нажать кнопку Submit
+  expected-result: |
+    Успешная регистрация Пользователя
+
+- summary: |
+    Проверка входа пользователя с существующими логином и паролем
+  requirement: |
+    При верном вводе логине и пароля пользователь должен войти в систему
+  prerequisites: |
+    no-data
+  test-data: |
+    no-data
+  steps:
+    - Нажать на кнопку Sign in
+    - Ввести Email
+    - Ввести Password
+    - Нажать кнопку Submit
+  expected-result: |
+    Пользователь должен попасть на главную страницу
+
+- summary: |
+    Проверка входа пользователя с несуществующими логином и паролем
+  requirement: |
+    При неправильном логине или пароле пользователь должен получить сообщение об ошибке
+  prerequisites:
+    no-data
+  test-data: |
+    no-data
+  steps:
+    - Нажать на кнопку Sign in
+    - Ввести Email
+    - Ввести Password
+    - Нажать кнопку Submit
+  expected-result: |
+    Пользователь должен остаться на странице, отображается сообщение "INVALID_PASSWORD" или "EMAIL_NOT_FOUND"
+
+- summary: |
+    Проверка редактирования и внесения данных в профиль
+  requirement: |
+    Зарегистрированные пользователи могут создавать и редактировать свой профиль
+  prerequisites: |
+    no-data
+  test-data: |
+    no-data
+  steps:
+    - Нажать на Nickname на панели сверху
+    - Выбрать Settings
+    - Нажать на Settings
+    - Нажать кнопку Submit
+  expected-result: |
+    Пользователь должен попасть на главную страницу
