@@ -1,0 +1,52 @@
+---
+- summary: |
+    Проверка регистрации нового пользователя
+  status: pass
+
+- summary: |
+    Проверка входа пользователя с существующими email и password
+  status: fail
+
+- summary: |
+    Проверка входа пользователя с несуществующими email или password
+  status: pass
+
+- summary: |
+    Проверка входа пользователя через GitHub
+  status: pass
+
+- summary: |
+    Проверка входа пользователя через Discord
+  status: pass
+
+- summary: |
+    Проверка редактирования и внесения данных в профиль
+  status: pass
+
+- summary: |
+    Проверка создания задачи при написании Description только на русском
+  status: fail
+
+- summary: |
+    Проверка создания задачи при написании Description на английском или на английском и русском
+  status: pass
+
+- summary: |
+    Проверка создания игровой сессии
+  status: pass
+
+- summary: |
+    Проверка выбора языка программирования в игровой сессии
+  status: pass
+
+- summary: |
+    Проверка работы чата
+  status: pass
+
+- summary: |
+    Проверка задания параметров игры
+  status: pass
+
+- summary: |
+    Проверка создания турнира
+  status: pass
